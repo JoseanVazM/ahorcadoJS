@@ -89,10 +89,13 @@
             var charCode = event.keyCode;
             var keyValue = event.key;
 
+            // Si pulsas Intro, cambia de palabra
             if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123)){
                 comprobar(document.getElementById(keyValue.toUpperCase()));
             }else if(keyValue=="ñ" || keyValue=="Ñ"){
                 comprobar(document.getElementById('N2'));
+            } else if (charCode==13) {
+                iniciar()
             }
         }, false);
     </script>   
