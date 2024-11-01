@@ -75,6 +75,12 @@ const palabras = [{
     palabra: "suzuki",
     pista: "Marca de coche"
 },{
+    palabra: "mitsubishi",
+    pista: "Marca de coche"
+},{
+    palabra: "ferrari",
+    pista: "Marca de coche"
+},{
     palabra: "sandia",
     pista: "Una fruta"
 },{
@@ -91,6 +97,9 @@ const palabras = [{
     pista: "Una fruta"
 },{
     palabra: "fresa",
+    pista: "Una fruta"
+},{
+    palabra: "platano",
     pista: "Una fruta"
 },{
     palabra: "baloncesto",
@@ -115,6 +124,12 @@ const palabras = [{
     pista: "Fruto seco"
 },{
     palabra: "nuez",
+    pista: "Fruto seco"
+},{
+    palabra: "avellana",
+    pista: "Fruto seco"
+},{
+    palabra: "cacahuete",
     pista: "Fruto seco"
 },{
     palabra: "higuera",
@@ -204,14 +219,23 @@ const palabras = [{
     palabra: "ensaladera",
     pista: "Tipo de recipiente"
 },{
+    palabra: "tupperware",
+    pista: "Tipo de recipiente"
+},{
     palabra: "ordenador",
-    pista: "Elemento de trabajo"
+    pista: "Herramienta de trabajo"
 },{
     palabra: "carretilla",
-    pista: "Elemento de trabajo"
+    pista: "Herramienta de trabajo"
 },{
     palabra: "pizarra",
-    pista: "Elemento de trabajo"
+    pista: "Herramienta de trabajo"
+},{
+    palabra: "taladro",
+    pista: "Herramienta de trabajo"
+},{
+    palabra: "brocha",
+    pista: "Herramienta de trabajo"
 },{
     palabra: "carpintero",
     pista: "Una profesión"
@@ -229,5 +253,11 @@ const palabras = [{
     pista: "Una profesión"
 },{
     palabra: "policia",
+    pista: "Una profesión"
+},{
+    palabra: "psicologo",
+    pista: "Una profesión"
+},{
+    palabra: "enfermera",
     pista: "Una profesión"
 }]
