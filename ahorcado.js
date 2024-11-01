@@ -3,6 +3,9 @@
         let sel_palabra; // Posición de la palabra obtenido por random
         let palabra_selec; // Array con todas las letras de la palabra
         let intentos = 11;
+        // Array y contador para controlar que no se repita la palabra en las últimas 10 jugadas
+        let palabras_usadas =[];
+        let cont_palabras_usadas = 0;
 
 
         // Función para iniciar y reiniciar el juego.
@@ -20,8 +23,24 @@
             document.getElementById("imagen").src = "img/ahorcado_"+ intentos +".png";
 
             // Saco la posición aleatoria para extraer la palabra (desde 0 hasta el tamaño del array palabra -1)
-            sel_palabra = Math.floor(Math.random() *(palabras.length));
+            sel_palabra = Math.floor(Math.random() *(palabras.length-1));
 
+            // Uso esto para que no se repita la palabra en las últimas 10 veces que se ha jugado
+            for (i in palabras_usadas){
+                if (sel_palabra==palabras_usadas[i]){
+                    sel_palabra = Math.floor(Math.random() *(palabras.length-1));
+                    i=0;
+                }
+            }
+
+            palabras_usadas[cont_palabras_usadas]=sel_palabra;
+            if (cont_palabras_usadas>8){
+                cont_palabras_usadas=0;
+            }else{
+                cont_palabras_usadas++;
+            }
+            
+            
             // Separo la palabra obtenida (con la posición aleatoria) en un array por letras
             palabra_selec = palabras[sel_palabra].palabra.split("");
 
