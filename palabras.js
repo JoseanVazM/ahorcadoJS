@@ -108,7 +108,7 @@ const palabras = [{
     palabra: "balonmano",
     pista: "Un deporte"
 },{
-    palabra: "watterpolo",
+    palabra: "waterpolo",
     pista: "Un deporte"
 },{
     palabra: "baseball",
